@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
-import { About } from './assets/pages/about'
-import { Experience } from './assets/pages/experience'
-import { Projects } from './assets/pages/projects'
+import { About } from './pages/about'
+import { Experience } from './pages/experience'
+import { Projects } from './pages/projects'
 
 export function Router() {
   const pathname = useLocation()
