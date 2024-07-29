@@ -24,7 +24,6 @@ export const Content = styled(Dialog.Content)`
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(16px);
-  padding: 12px;
   transform: translateX(-100%);
   animation: menuSlide 0.3s forwards;
 
@@ -43,6 +42,7 @@ export const AvatarRoot = styled(Avatar.Root)`
 export const AvatarImage = styled(Avatar.Image)`
   width: 100%;
   border-radius: 100%;
+  border: 1px solid ${(props) => props.theme.colours.stroke};
   padding: 0;
   margin: 0;
 `
@@ -51,8 +51,10 @@ export const Title = styled(Dialog.Title)`
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: ${(props) => props.theme.fontSizes.md};
-  font-weight: ${(props) => props.theme.fontWeights.medium};
+  font-size: ${(props) => props.theme.fontSizes.lg};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
+  padding-inline: 12px;
+  padding-block: 24px;
 `
 
 export const CloseButton = styled.button`
@@ -64,4 +66,37 @@ export const CloseButton = styled.button`
   margin-right: 12px;
 `
 
-export const DialogNavigation = styled(Dialog.Description)``
+export const Separator = styled.hr`
+  border: none;
+  height: 1px;
+  margin-inline: 12px;
+  margin-bottom: 12px;
+  background-image: radial-gradient(
+    circle at center,
+    ${(props) => props.theme.colours.stroke},
+    ${(props) => props.theme.colours.stroke},
+    transparent
+  );
+`
+
+export const DialogNavigation = styled(Dialog.Description)`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+  gap: 12px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: ${(props) => props.theme.fontSizes.lg};
+    text-decoration: none;
+    padding: 12px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+`
