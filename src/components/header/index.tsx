@@ -12,7 +12,11 @@ import {
 import avatarImage from './../../assets/user.png'
 import { List } from '@phosphor-icons/react'
 
-export function Header() {
+interface HeaderProps {
+  setIsMobileMenuOpen: (isOpen: boolean) => void
+}
+
+export function Header({ setIsMobileMenuOpen }: HeaderProps) {
   return (
     <HeaderContainer>
       <HeaderDesktop>
@@ -31,7 +35,10 @@ export function Header() {
         </LanguageMenu>
       </HeaderDesktop>
       <HeaderMobile>
-        <HamburgerButton type="button">
+        <HamburgerButton
+          type="button"
+          onClick={() => setIsMobileMenuOpen(true)}
+        >
           <List className="icon" size={36} />
         </HamburgerButton>
       </HeaderMobile>
