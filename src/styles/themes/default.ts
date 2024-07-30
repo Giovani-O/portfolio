@@ -20,4 +20,8 @@ export const defaultTheme = {
     medium: 500,
     bold: 700,
   },
+
+  layoutProperties: {
+    'top-140': '140px',
+  },
 }

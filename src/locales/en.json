@@ -2,5 +2,9 @@
   "about": "About me",
   "experience": "Experience",
   "projects": "Projects",
-  "language": "Language: "
+  "language": "Language: ",
+
+  "greetings": "Hi, I'm Giovani",
+  "greetings-description": "A fullstack developer driven by a passion for making things happen",
+  "tools": "These are my tools"
 }

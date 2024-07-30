@@ -4,12 +4,13 @@ export const PanelSection = styled.section`
   width: 100vw;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 `
 
 export const PanelContent = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   width: 1200px;
   border-radius: 16px;

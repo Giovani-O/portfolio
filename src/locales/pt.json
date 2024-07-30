@@ -1,5 +1,10 @@
 {
   "about": "Sobre mim",
   "experience": "Experiência",
-  "projects": "Projetos"
+  "projects": "Projetos",
+  "language": "Idioma: ",
+
+  "greetings": "Olá, eu sou o Giovani",
+  "greetings-description": "Um desenvolvedor fullstack apaixonado por fazer coisas acontecerem",
+  "tools": "Essas são minhas ferramentas"
 }
