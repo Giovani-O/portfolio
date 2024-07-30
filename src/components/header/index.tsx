@@ -12,6 +12,7 @@ import {
 import avatarImage from './../../assets/user.png'
 import { List } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 
 interface HeaderProps {
   setIsMobileMenuOpen: (isOpen: boolean) => void
@@ -20,15 +21,23 @@ interface HeaderProps {
 export function Header({ setIsMobileMenuOpen }: HeaderProps) {
   const { t } = useTranslation()
 
+  const navigate = useNavigate()
+
   return (
     <HeaderContainer>
       <HeaderDesktop>
         <Navbar>
           <Avatar src={avatarImage} />
           <Title>Giovani de Oliveira</Title>
-          <NavbarLink href="#">{t('about')}</NavbarLink>
-          <NavbarLink href="#">{t('experience')}</NavbarLink>
-          <NavbarLink href="#">{t('projects')}</NavbarLink>
+          <NavbarLink onClick={() => navigate('/about')}>
+            {t('about')}
+          </NavbarLink>
+          <NavbarLink onClick={() => navigate('/experience')}>
+            {t('experience')}
+          </NavbarLink>
+          <NavbarLink onClick={() => navigate('/projects')}>
+            {t('projects')}
+          </NavbarLink>
         </Navbar>
 
         <LanguageMenu>
