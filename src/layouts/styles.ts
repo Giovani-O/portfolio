@@ -1,13 +1,9 @@
 import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
 import * as Avatar from '@radix-ui/react-avatar'
-import background from '../assets/background.png'
 
 export const LayoutContainer = styled.main`
   height: 100vh;
-  background: url(${background}) no-repeat;
-  background-position: center;
-  background-size: cover;
 `
 
 export const Overlay = styled(Dialog.Overlay)`

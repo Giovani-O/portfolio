@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import background from './../assets/background.png'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -9,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background: url(${background}) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
