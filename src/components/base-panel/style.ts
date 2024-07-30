@@ -4,7 +4,18 @@ export const PanelSection = styled.section`
   width: 100vw;
   display: flex;
   justify-content: center;
-  /* margin-top: 100px; */
+  animation: slide-up 1.2s ease-out forwards;
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 `
 
 export const PanelContent = styled.div`

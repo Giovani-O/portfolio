@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
+export const Spacer = styled.div`
+  height: 100px;
+`
+
 export const Bio = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  /* top: -${(props) => props.theme.layoutProperties['top-140']}; */
+  margin-top: -${(props) => props.theme.layoutProperties['top-140']};
 `
 
 export const UserImage = styled.img`
