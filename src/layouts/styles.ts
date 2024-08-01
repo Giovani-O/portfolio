@@ -90,6 +90,7 @@ export const DialogNavigation = styled(Dialog.Description)`
     text-decoration: none;
     padding: 12px;
     transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
 
     &:focus {
       background-color: rgba(0, 0, 0, 0.1);
