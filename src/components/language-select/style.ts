@@ -6,6 +6,10 @@ export const Select = styled.select`
   border: 1px solid ${(props) => props.theme.colours.stroke};
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
+
+  @media (max-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.lg};
+  }
 `
 
 export const Option = styled.option`

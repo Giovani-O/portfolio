@@ -18,7 +18,7 @@ export const Content = styled(Dialog.Content)`
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(16px);
   transform: translateX(-100%);
   animation: menuSlide 0.3s forwards;
@@ -95,5 +95,14 @@ export const DialogNavigation = styled(Dialog.Description)`
     &:focus {
       background-color: rgba(0, 0, 0, 0.1);
     }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px;
+    font-size: ${(props) => props.theme.fontSizes.lg};
+    margin-top: auto;
   }
 `

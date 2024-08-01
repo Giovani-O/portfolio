@@ -14,8 +14,15 @@ import {
 import { useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 import avatarImage from '../assets/user.png'
-import { Code, GraduationCap, UserCircle, X } from '@phosphor-icons/react'
+import {
+  Code,
+  GraduationCap,
+  Translate,
+  UserCircle,
+  X,
+} from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
+import { LanguageSelect } from '../components/language-select'
 
 export function DefaultLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -69,6 +76,11 @@ export function DefaultLayout() {
                 <Code size={36} />
                 {t('projects')}
               </a>
+              <span>
+                <Translate size={36} />
+                {t('language')}
+                <LanguageSelect />
+              </span>
             </DialogNavigation>
           </Content>
         </Dialog.Portal>
