@@ -31,6 +31,8 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  overflow: hidden;
 `
 
 export const Paragraph = styled.p`
@@ -41,11 +43,19 @@ export const Paragraph = styled.p`
   &:has(+ p) {
     margin-bottom: 0.75rem;
   }
+
+  @media (max-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.sm};
+  }
 `
 
 export const ContentImage = styled.img`
-  min-width: 400px;
+  width: 400px;
   object-fit: contain;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `
 
 export const ContentLeft = styled.div`
@@ -54,6 +64,24 @@ export const ContentLeft = styled.div`
   width: 100%;
   min-height: 120px;
   align-items: center;
+
+  animation: slide-left 0.8s ease-out forwards;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(25%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 `
 
 export const ContentRight = styled.div`
@@ -63,6 +91,23 @@ export const ContentRight = styled.div`
   width: 100%;
   min-height: 120px;
   align-items: center;
+  animation: slide-right 0.8s ease-out forwards;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 `
 
 export const Separator = styled.hr`
