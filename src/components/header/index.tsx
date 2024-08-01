@@ -13,6 +13,7 @@ import avatarImage from './../../assets/user.png'
 import { List } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
+import { LanguageSelect } from '../language-select'
 
 interface HeaderProps {
   setIsMobileMenuOpen: (isOpen: boolean) => void
@@ -41,9 +42,8 @@ export function Header({ setIsMobileMenuOpen }: HeaderProps) {
         </Navbar>
 
         <LanguageMenu>
-          <span>
-            <p>{t('language')}</p>
-          </span>
+          <p>{t('language')}</p>
+          <LanguageSelect />
         </LanguageMenu>
       </HeaderDesktop>
       <HeaderMobile>

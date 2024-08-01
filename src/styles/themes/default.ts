@@ -5,6 +5,7 @@ export const defaultTheme = {
     primary: '#7D58EA',
     secondary: '#42298A',
     stroke: 'rgba(255, 255, 255, 0.1)',
+    background: 'rgba(0, 0, 0, 0.2),',
   },
 
   fontSizes: {
