@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import { Header } from '../components/header'
 import {
   AvatarImage,
@@ -20,6 +20,22 @@ import { useTranslation } from 'react-i18next'
 export function DefaultLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { t } = useTranslation()
+  const navigate = useNavigate()
+
+  function navigateToAbout() {
+    navigate('/about')
+    setIsMobileMenuOpen(false)
+  }
+
+  function navigateToExperience() {
+    navigate('/experience')
+    setIsMobileMenuOpen(false)
+  }
+
+  function navigateToProjects() {
+    navigate('/projects')
+    setIsMobileMenuOpen(false)
+  }
 
   return (
     <LayoutContainer>
@@ -41,15 +57,15 @@ export function DefaultLayout() {
             </Title>
             <Separator />
             <DialogNavigation>
-              <a href="#">
+              <a onClick={navigateToAbout}>
                 <UserCircle size={36} />
                 {t('about')}
               </a>
-              <a href="#">
+              <a onClick={navigateToExperience}>
                 <GraduationCap size={36} />
                 {t('experience')}
               </a>
-              <a href="#">
+              <a onClick={navigateToProjects}>
                 <Code size={36} />
                 {t('projects')}
               </a>

@@ -28,7 +28,7 @@ export const BioInfo = styled.div`
   gap: 12px;
 
   h1 {
-    font-size: ${(props) => props.theme.fontSizes.lg};
+    font-size: ${(props) => props.theme.fontSizes.xl};
     font-weight: ${(props) => props.theme.fontWeights.bold};
   }
 

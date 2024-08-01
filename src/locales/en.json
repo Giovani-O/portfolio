@@ -6,5 +6,16 @@
 
   "greetings": "Hi, I'm Giovani",
   "greetings-description": "A fullstack developer driven by a passion for making things happen",
-  "tools": "These are my tools"
+  "tools": "These are my tools",
+
+  "experience-subtitle": "Take a look at what I've been up to",
+  "fcamara-alt": "FCamara's logo",
+  "fcamara-p1": "Currently, I'm a trainee at FCamara, a brazilian IT consultancy with a strong presence in multiple sectors, such as health, finances, retail and more!",
+  "fcamara-p2": "My journey with FCamara started early in 2024, when I took part in a hackathon disputed by 200 candidates, where I could work together with other four developers and show my problem solving skills.",
+  "rocketseat-alt": "Rocketseat and Sirius's logo",
+  "rocketseat-p1": "Recently, with the goal of improving further as a developer, I started my Fullstack Development MBA at Rocketseat and Sirius.",
+  "rocketseat-p2": "During the course, I'll be exploring technologies for front-end, back-end and mobile development as well as soft skills, and I will develop projects to solidify my skills.",
+  "unasp-alt": "UNASP logo",
+  "unasp-p1": "In August 2023 I graduated in Information Systems at UNASP on the Hortolândia campus, in the interior of São Paulo.",
+  "unasp-p2": "During the four years of the course, I studied technical skills that gave me the necessary base to excel at software development, as well as business and soft skills that prepared me to understand and face the challenges of the IT industry."
 }

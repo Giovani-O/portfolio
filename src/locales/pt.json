@@ -6,5 +6,16 @@
 
   "greetings": "Olá, eu sou o Giovani",
   "greetings-description": "Um desenvolvedor fullstack apaixonado por fazer coisas acontecerem",
-  "tools": "Essas são minhas ferramentas"
+  "tools": "Essas são minhas ferramentas",
+
+  "experience-subtitle": "Dê uma olhada no que eu estive fazendo",
+  "fcamara-alt": "Logo da FCamara",
+  "fcamara-p1": "Atualmente eu sou um trainee na FCamara, uma consultoria de TI brasileira com uma forte presença em diversos setores, como saúde, finanças, varejo e mais!",
+  "fcamara-p2": "Minha jornada com a FCamara começeu no início de 2024, quando participei de um hackathon disputado por 200 candidatos, onde eu pude trabalhar em conjunto com quatro colegas e mostrar minhas habilidades de resolução de problemas.",
+  "rocketseat-alt": "Logos da Rocketseat e Sirius",
+  "rocketseat-p1": "Recentemente, com o objetivo de me aperfeiçoar como desenvolvedor, eu iniciei o MBA em Desenvolvimento Fullstack da Rocketseat em parceria com a Sirius.",
+  "rocketseat-p2": "Durante o curso, explorarei tecnologias para desenvolvimento front-end, back-end e mobile, bem como habilidades comportamentais, também irei desenvolver projetos para solidificar minhas habilidades.",
+  "unasp-alt": "Logo da UNASP",
+  "unasp-p1": "Em agosto de 2023, eu concluí o curso de Sistemas de Informação na UNASP, no campus de Hortolândia, no interior de São Paulo.",
+  "unasp-p2": "Durante os quatro anos do curso, estudei habilidades técnicas que me deram a base necessária para me destacar em desenvolvimento de software, além de habilidades de negócios e comportamentais que me prepararam para entender e lidar com os desafios da indústria de TI."
 }
