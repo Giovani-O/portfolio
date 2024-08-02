@@ -547,4 +547,4 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
   p, span, h1, h2, h3, h4, h5, h6, a, button, input {
     color: ${e=>e.theme.colours.white}
   }
-`;function X3(){return C.jsx(Vv,{theme:Q3,children:C.jsxs(H2,{i18n:de,children:[C.jsx(L2,{children:C.jsx(K3,{})}),C.jsx(Y3,{})]})})}ul.createRoot(document.getElementById("root")).render(C.jsx(v.StrictMode,{children:C.jsx(X3,{})}));
+`;function X3(){return C.jsx(Vv,{theme:Q3,children:C.jsxs(H2,{i18n:de,children:[C.jsx(L2,{basename:"/portfolio",children:C.jsx(K3,{})}),C.jsx(Y3,{})]})})}ul.createRoot(document.getElementById("root")).render(C.jsx(v.StrictMode,{children:C.jsx(X3,{})}));
