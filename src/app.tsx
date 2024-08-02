@@ -10,7 +10,7 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <I18nextProvider i18n={i18n}>
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
           <Router />
         </BrowserRouter>
 
