@@ -1,4 +1,4 @@
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { Router } from './router'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
@@ -10,9 +10,9 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <I18nextProvider i18n={i18n}>
-        <HashRouter>
+        <BrowserRouter basename="/portfolio">
           <Router />
-        </HashRouter>
+        </BrowserRouter>
 
         <GlobalStyle />
       </I18nextProvider>
