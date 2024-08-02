@@ -31,4 +31,8 @@ export const PanelContent = styled.div`
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4px);
+
+  @media (max-width: 900px) {
+    padding-inline: 12px;
+  }
 `

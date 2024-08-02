@@ -8,7 +8,11 @@ export const Select = styled.select`
   color: white;
 
   @media (max-width: 900px) {
-    font-size: ${(props) => props.theme.fontSizes.lg};
+    font-size: ${(props) => props.theme.fontSizes.md};
+  }
+
+  @media (max-width: 424px) {
+    font-size: ${(props) => props.theme.fontSizes.xs};
   }
 `
 

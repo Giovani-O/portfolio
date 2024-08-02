@@ -86,7 +86,7 @@ export const DialogNavigation = styled(Dialog.Description)`
     display: flex;
     align-items: center;
     gap: 24px;
-    font-size: ${(props) => props.theme.fontSizes.lg};
+    font-size: ${(props) => props.theme.fontSizes.md};
     text-decoration: none;
     padding: 12px;
     transition: background-color 0.2s ease-in-out;
@@ -102,7 +102,7 @@ export const DialogNavigation = styled(Dialog.Description)`
     align-items: center;
     gap: 24px;
     padding: 12px;
-    font-size: ${(props) => props.theme.fontSizes.lg};
+    font-size: ${(props) => props.theme.fontSizes.md};
     margin-top: auto;
   }
 `
