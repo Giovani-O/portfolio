@@ -34,14 +34,17 @@ export const Subtitle = styled.p`
   text-align: center;
 `
 
-export const Separator = styled.hr`
-  border: none;
-  height: 1px;
-  margin-inline: 12px;
-  background-image: radial-gradient(
-    circle at center,
-    ${(props) => props.theme.colours.stroke},
-    ${(props) => props.theme.colours.stroke},
-    transparent
-  );
+export const ProjectsContainer = styled.div`
+  animation: slide-up 0.8s ease-out forwards;
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(15%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 `

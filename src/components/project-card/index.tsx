@@ -32,15 +32,14 @@ export function ProjectCard({
         ))}
       </Tags>
 
-      <a
-        href="https://ignite-coffee-delivery-hu2qn3fv7-giovani-o.vercel.app/"
-        target="_blank"
-      >
+      <a href={linkSite ? linkSite : linkGithub} target="_blank">
         <div>
           <img src={image} alt={imageAlt} />
         </div>
       </a>
-      <Description>{description}</Description>
+      <Description
+        dangerouslySetInnerHTML={{ __html: description }}
+      ></Description>
       {linkSite ? (
         <LinkLabel>
           {t('link-site')}{' '}

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { BasePanel } from '../../components/base-panel'
-import { Subtitle, Title, TitleContainer } from './style'
+import { ProjectsContainer, Subtitle, Title, TitleContainer } from './style'
 import { ProjectCard } from '../../components/project-card'
 
 import coffeeDelivery from '../../assets/projects/coffee.png'
@@ -18,7 +18,7 @@ export function Projects() {
         <Subtitle>{t('projects-subtitle')}</Subtitle>
       </TitleContainer>
 
-      <div>
+      <ProjectsContainer>
         <ProjectCard
           title={t('coffee-delivery')}
           tags={[
@@ -70,7 +70,7 @@ export function Projects() {
           description={t('orange-tasks-description')}
           linkGithub="https://github.com/Giovani-O/orange-branch-task-manager-react"
         />
-      </div>
+      </ProjectsContainer>
     </BasePanel>
   )
 }

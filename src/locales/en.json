@@ -29,7 +29,7 @@
 
   "orange-branch-task-manager": "Orange Branch Task Manager",
   "orange-branch-task-manager-alt": "Image of C# code",
-  "orange-branch-task-manager-description": "A Web API developed with C# during FCamara's Orange Branch program, under the mentorship of Kaique Lira. The purpose of this API is to register users and simple tasks, which are stored in a MySQL database. After some actions, a notification is sent via email, for this to happen, RabbitMQ is used to communicate between the API and a worker that observes the queue in RabbitMQ and sends emails. In this project, I strived to follow Clean Architecture and SOLID standards, and also developed unit tests for business logic.",
+  "orange-branch-task-manager-description": "A Web API developed with C# during FCamara's Orange Branch program, under the mentorship of <a href='https://www.linkedin.com/in/kaiquelira/' target='_blank'>Kaique Lira</a>. The purpose of this API is to register users and simple tasks, which are stored in a MySQL database. After some actions, a notification is sent via email, for this to happen, RabbitMQ is used to communicate between the API and a worker that observes the queue in RabbitMQ and sends emails. In this project, I strived to follow Clean Architecture and SOLID standards, and also developed unit tests for business logic.",
 
   "orange-tasks": "Orange Tasks",
   "orange-tasks-alt": "Image of a task management website",
