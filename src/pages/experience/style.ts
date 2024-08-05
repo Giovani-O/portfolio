@@ -109,15 +109,3 @@ export const ContentRight = styled.div`
     }
   }
 `
-
-export const Separator = styled.hr`
-  border: none;
-  height: 1px;
-  margin-inline: 12px;
-  background-image: radial-gradient(
-    circle at center,
-    ${(props) => props.theme.colours.stroke},
-    ${(props) => props.theme.colours.stroke},
-    transparent
-  );
-`

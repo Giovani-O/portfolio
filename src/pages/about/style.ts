@@ -36,6 +36,7 @@ export const BioInfo = styled.div`
     font-size: ${(props) => props.theme.fontSizes.xs};
     font-weight: ${(props) => props.theme.fontWeights.regular};
     text-align: center;
+    line-height: 1;
   }
 
   @media (max-width: 900px) {
@@ -69,6 +70,7 @@ export const Tools = styled.section`
 
   h2 {
     margin-block: 40px;
+    text-align: center;
   }
 `
 

@@ -14,6 +14,7 @@ export const defaultTheme = {
     md: '1.25rem', // 20px
     sm: '1.125rem', // 18px
     xs: '1rem', // 16px
+    tag: '0.875rem', // 14px
   },
 
   fontWeights: {

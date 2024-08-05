@@ -5,7 +5,7 @@
   "language": "Language: ",
 
   "greetings": "Hi, I'm Giovani",
-  "greetings-description": "A fullstack developer driven by a passion for making things happen",
+  "greetings-description": "A fullstack developer passionate about what I do, constantly studying and practicing to develop innovative solutions",
   "tools": "These are my tools",
 
   "experience-subtitle": "Take a look at what I've been up to",
@@ -17,5 +17,21 @@
   "rocketseat-p2": "During the course, I'll be exploring technologies for front-end, back-end and mobile development as well as soft skills, and I will develop projects to solidify my skills.",
   "unasp-alt": "UNASP logo",
   "unasp-p1": "In August 2023 I graduated in Information Systems at UNASP on the Hortolândia campus, in the interior of São Paulo.",
-  "unasp-p2": "During the four years of the course, I studied technical skills that gave me the necessary base to excel at software development, as well as business and soft skills that prepared me to understand and face the challenges of the IT industry."
+  "unasp-p2": "During the four years of the course, I studied technical skills that gave me the necessary base to excel at software development, as well as business and soft skills that prepared me to understand and face the challenges of the IT industry.",
+
+  "projects-subtitle": "Take a look at some of my favorite projects",
+  "link-site": "🖥️ Access the application:",
+  "link-github": "👨‍💻 Take a look at the source code:",
+
+  "coffee-delivery": "Coffee Delivery",
+  "coffee-delivery-alt": "Image of a coffee delivery website",
+  "coffee-delivery-description": "A SPA (Single Page Application) developed as a challenge in Rocketseat's React course. During development, features, libraries and tools available in the React ecosystem were used, such as Styled Components, Hooks, Contexts and Reducers. The application also has a responsive layout, adapting to different screen sizes.",
+
+  "orange-branch-task-manager": "Orange Branch Task Manager",
+  "orange-branch-task-manager-alt": "Image of C# code",
+  "orange-branch-task-manager-description": "A Web API developed with C# during FCamara's Orange Branch program, under the mentorship of Kaique Lira. The purpose of this API is to register users and simple tasks, which are stored in a MySQL database. After some actions, a notification is sent via email, for this to happen, RabbitMQ is used to communicate between the API and a worker that observes the queue in RabbitMQ and sends emails. In this project, I strived to follow Clean Architecture and SOLID standards, and also developed unit tests for business logic.",
+
+  "orange-tasks": "Orange Tasks",
+  "orange-tasks-alt": "Image of a task management website",
+  "orange-tasks-description": "This is the front-end of Orange Branch Task Manager, built with React, TypeScript, Tailwind and other technologies. The objective was to have an interface integrated with the API to facilitate access to its features."
 }

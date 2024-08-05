@@ -8,12 +8,12 @@ import {
   Paragraph,
   ContentRight,
   ContentContainer,
-  Separator,
   ContentImage,
 } from './style'
 import fcamara from '../../assets/fcamara.png'
 import rocketseat from '../../assets/rocketseat.svg'
 import unasp from '../../assets/unasp.png'
+import { Separator } from '../../components/separator'
 
 export function Experience() {
   const { t } = useTranslation()

@@ -5,7 +5,7 @@
   "language": "Idioma: ",
 
   "greetings": "Olá, eu sou o Giovani",
-  "greetings-description": "Um desenvolvedor fullstack apaixonado por fazer coisas acontecerem",
+  "greetings-description": "Um desenvolvedor fullstack apaixonado pelo que faço, estudando e praticando constantemente para desenvolver soluções inovadoras",
   "tools": "Essas são minhas ferramentas",
 
   "experience-subtitle": "Dê uma olhada no que eu estive fazendo",
@@ -17,5 +17,21 @@
   "rocketseat-p2": "Durante o curso, explorarei tecnologias para desenvolvimento front-end, back-end e mobile, bem como habilidades comportamentais, também irei desenvolver projetos para solidificar minhas habilidades.",
   "unasp-alt": "Logo da UNASP",
   "unasp-p1": "Em agosto de 2023, eu concluí o curso de Sistemas de Informação na UNASP, no campus de Hortolândia, no interior de São Paulo.",
-  "unasp-p2": "Durante os quatro anos do curso, estudei habilidades técnicas que me deram a base necessária para me destacar em desenvolvimento de software, além de habilidades de negócios e comportamentais que me prepararam para entender e lidar com os desafios da indústria de TI."
+  "unasp-p2": "Durante os quatro anos do curso, estudei habilidades técnicas que me deram a base necessária para me destacar em desenvolvimento de software, além de habilidades de negócios e comportamentais que me prepararam para entender e lidar com os desafios da indústria de TI.",
+
+  "projects-subtitle": "Veja alguns dos meus projetos favoritos",
+  "link-site": "🖥️ Acesse a aplicação:",
+  "link-github": "👨‍💻 Dê uma olhada no código fonte:",
+
+  "coffee-delivery": "Coffee Delivery",
+  "coffee-delivery-alt": "Imagem de um site de delivery de café",
+  "coffee-delivery-description": "Uma SPA (Single Page Application) desenvolvida como um desafio da trilha de React da Rocketseat. Durante o desenvolvimento foram utilizadas funcionalidades, bibliotecas e ferramentas disponíveis no ecossistema React, como Styled Components, Hooks, Contextos e Reducers. A aplicação também conta com um layout responsivo, se adaptando a diversos tamanhos de telas.",
+
+  "orange-branch-task-manager": "Orange Branch Task Manager",
+  "orange-branch-task-manager-alt": "Imagem de código C#",
+  "orange-branch-task-manager-description": "Uma Web API desenvolvida com C# durante o programa Orange Branch da FCamara, sob mentoria de Kaique Lira. O objetivo dessa API é o cadastro de usuários e tarefas simples, que são armazenados em um banco de dados MySQL. Após algumas ações, é enviada uma notificação via e-mail, para que isso aconteça, é usado o RabbitMQ para fazer a comunicação entre a API e um worker que observa a fila no RabbitMQ e dispara os emails. Nesse projeto, eu me esforçei para seguir padrões de Clean Architecture e SOLID, e também desenvolvi testes unitários para a lógica de negócios.",
+
+  "orange-tasks": "Orange Tasks",
+  "orange-tasks-alt": "Imagem de um site de gestão de tarefas",
+  "orange-tasks-description": "Este é o front-end do Orange Branch Task Manager, desenvolvido com React, TypeScript, Tailwind e outras tecnologias. O objetivo era ter uma interface integrada com a API para facilitar o acesso as funcionalidades da mesma."
 }
