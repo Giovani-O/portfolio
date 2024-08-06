@@ -1,5 +1,8 @@
 import {
   Avatar,
+  CloseButton,
+  Content,
+  DialogNavigation,
   HamburgerButton,
   HeaderContainer,
   HeaderDesktop,
@@ -7,24 +10,34 @@ import {
   LanguageMenu,
   Navbar,
   NavbarLink,
+  Overlay,
+  Separator,
   Title,
+  TitleMobile,
 } from './style'
 import avatarImage from './../../assets/user.png'
-import { List } from '@phosphor-icons/react'
+import {
+  Code,
+  GraduationCap,
+  List,
+  Translate,
+  UserCircle,
+  X,
+} from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 import { LanguageSelect } from '../language-select'
+import { useState } from 'react'
+import * as Dialog from '@radix-ui/react-dialog'
 
-interface HeaderProps {
-  setIsMobileMenuOpen: (isOpen: boolean) => void
-}
-
-export function Header({ setIsMobileMenuOpen }: HeaderProps) {
+export function Header() {
   const { t } = useTranslation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   function smoothScrollToId(id: string) {
     const element = document.getElementById(id)
 
     element?.scrollIntoView({ behavior: 'smooth' })
+    setIsMobileMenuOpen(false)
   }
 
   return (
@@ -49,6 +62,7 @@ export function Header({ setIsMobileMenuOpen }: HeaderProps) {
           <LanguageSelect />
         </LanguageMenu>
       </HeaderDesktop>
+
       <HeaderMobile>
         <HamburgerButton
           type="button"
@@ -57,6 +71,41 @@ export function Header({ setIsMobileMenuOpen }: HeaderProps) {
           <List className="icon" size={36} />
         </HamburgerButton>
       </HeaderMobile>
+
+      <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+        <Dialog.Portal>
+          <Overlay />
+          <Content>
+            <TitleMobile>
+              <Avatar src={avatarImage} />
+              Giovani de Oliveira
+              <CloseButton onClick={() => setIsMobileMenuOpen(false)}>
+                <X size={36} />
+              </CloseButton>
+            </TitleMobile>
+            <Separator />
+            <DialogNavigation>
+              <a onClick={() => smoothScrollToId('home')}>
+                <UserCircle size={36} />
+                {t('about')}
+              </a>
+              <a onClick={() => smoothScrollToId('experience')}>
+                <GraduationCap size={36} />
+                {t('experience')}
+              </a>
+              <a onClick={() => smoothScrollToId('projects')}>
+                <Code size={36} />
+                {t('projects')}
+              </a>
+              <span>
+                <Translate size={36} />
+                {t('language')}
+                <LanguageSelect />
+              </span>
+            </DialogNavigation>
+          </Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </HeaderContainer>
   )
 }

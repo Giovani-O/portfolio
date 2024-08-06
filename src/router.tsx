@@ -13,9 +13,9 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<DefaultLayout />}>
-        <Route path="/home" element={<Home />} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
-        <Route path="" element={<Navigate to="/home" replace />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   )
