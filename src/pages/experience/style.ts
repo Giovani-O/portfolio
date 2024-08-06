@@ -6,7 +6,7 @@ export const TitleContainer = styled.div`
   align-items: center;
   gap: 12px;
   width: 100%;
-  margin-bottom: 40px;
+  margin-block: 40px;
 `
 
 export const Title = styled.h1`
@@ -31,6 +31,7 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px;
 
   overflow: hidden;
 `

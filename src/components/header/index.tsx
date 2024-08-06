@@ -12,7 +12,6 @@ import {
 import avatarImage from './../../assets/user.png'
 import { List } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
 import { LanguageSelect } from '../language-select'
 
 interface HeaderProps {
@@ -22,7 +21,11 @@ interface HeaderProps {
 export function Header({ setIsMobileMenuOpen }: HeaderProps) {
   const { t } = useTranslation()
 
-  const navigate = useNavigate()
+  function smoothScrollToId(id: string) {
+    const element = document.getElementById(id)
+
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <HeaderContainer>
@@ -30,13 +33,13 @@ export function Header({ setIsMobileMenuOpen }: HeaderProps) {
         <Navbar>
           <Avatar src={avatarImage} />
           <Title>Giovani de Oliveira</Title>
-          <NavbarLink onClick={() => navigate('/about')}>
+          <NavbarLink onClick={() => smoothScrollToId('home')}>
             {t('about')}
           </NavbarLink>
-          <NavbarLink onClick={() => navigate('/experience')}>
+          <NavbarLink onClick={() => smoothScrollToId('experience')}>
             {t('experience')}
           </NavbarLink>
-          <NavbarLink onClick={() => navigate('/projects')}>
+          <NavbarLink onClick={() => smoothScrollToId('projects')}>
             {t('projects')}
           </NavbarLink>
         </Navbar>

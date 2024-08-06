@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { BasePanel } from '../../components/base-panel'
 import {
   TitleContainer,
   Title,
@@ -19,7 +18,7 @@ export function Experience() {
   const { t } = useTranslation()
 
   return (
-    <BasePanel>
+    <div id="experience">
       <TitleContainer>
         <Title>{t('experience')}</Title>
         <Subtitle>{t('experience-subtitle')}</Subtitle>
@@ -54,6 +53,6 @@ export function Experience() {
           </div>
         </ContentLeft>
       </ContentContainer>
-    </BasePanel>
+    </div>
   )
 }

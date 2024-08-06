@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { BasePanel } from '../../components/base-panel'
 import { ProjectsContainer, Subtitle, Title, TitleContainer } from './style'
 import { ProjectCard } from '../../components/project-card'
 
@@ -12,7 +11,7 @@ export function Projects() {
   const { t } = useTranslation()
 
   return (
-    <BasePanel>
+    <div id="projects">
       <TitleContainer>
         <Title>{t('projects')}</Title>
         <Subtitle>{t('projects-subtitle')}</Subtitle>
@@ -71,6 +70,6 @@ export function Projects() {
           linkGithub="https://github.com/Giovani-O/orange-branch-task-manager-react"
         />
       </ProjectsContainer>
-    </BasePanel>
+    </div>
   )
 }

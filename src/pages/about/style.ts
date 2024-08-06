@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-export const Spacer = styled.div`
-  height: 100px;
-`
-
 export const Bio = styled.div`
   position: relative;
   display: flex;
@@ -66,6 +62,7 @@ export const Tools = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
   /* top: -${(props) => props.theme.layoutProperties['top-140']}; */
 
   h2 {
