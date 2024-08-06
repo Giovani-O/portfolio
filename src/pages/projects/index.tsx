@@ -1,11 +1,12 @@
 import { useTranslation } from 'react-i18next'
 import { ProjectsContainer, Subtitle, Title, TitleContainer } from './style'
-import { ProjectCard } from '../../components/project-card'
+// import { ProjectCard } from '../../components/project-card'
 
-import coffeeDelivery from '../../assets/projects/coffee.png'
-import taskManager from '../../assets/projects/task-manager.png'
-import orangeTasks from '../../assets/projects/orange-tasks.png'
-import { Separator } from '../../components/separator'
+// import coffeeDelivery from '../../assets/projects/coffee.png'
+// import taskManager from '../../assets/projects/task-manager.png'
+// import orangeTasks from '../../assets/projects/orange-tasks.png'
+// import { Separator } from '../../components/separator'
+import { ProjectsCarousel } from './projects-carousel'
 
 export function Projects() {
   const { t } = useTranslation()
@@ -17,8 +18,10 @@ export function Projects() {
         <Subtitle>{t('projects-subtitle')}</Subtitle>
       </TitleContainer>
 
+      <ProjectsCarousel />
+
       <ProjectsContainer>
-        <ProjectCard
+        {/* <ProjectCard
           title={t('coffee-delivery')}
           tags={[
             'React',
@@ -68,7 +71,7 @@ export function Projects() {
           imageAlt={t('orange-tasks-alt')}
           description={t('orange-tasks-description')}
           linkGithub="https://github.com/Giovani-O/orange-branch-task-manager-react"
-        />
+        /> */}
       </ProjectsContainer>
     </div>
   )

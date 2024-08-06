@@ -68,7 +68,7 @@ export const ContentLeft = styled.div`
 
   animation: slide-left 0.8s ease-out forwards;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
   }
@@ -94,7 +94,7 @@ export const ContentRight = styled.div`
   align-items: center;
   animation: slide-right 0.8s ease-out forwards;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
   }

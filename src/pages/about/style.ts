@@ -62,6 +62,10 @@ export const ToolCardGrid = styled.div`
   gap: 12px;
   width: 100%;
 
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
