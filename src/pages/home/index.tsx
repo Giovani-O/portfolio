@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { BasePanel } from '../../components/base-panel'
 import { Separator } from '../../components/separator'
 import { About } from '../about'
