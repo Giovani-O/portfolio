@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { Header } from '../components/header'
 import {
   AvatarImage,
@@ -27,20 +27,11 @@ import { LanguageSelect } from '../components/language-select'
 export function DefaultLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { t } = useTranslation()
-  const navigate = useNavigate()
 
-  function navigateToAbout() {
-    navigate('/about')
-    setIsMobileMenuOpen(false)
-  }
+  function smoothScrollToId(id: string) {
+    const element = document.getElementById(id)
 
-  function navigateToExperience() {
-    navigate('/experience')
-    setIsMobileMenuOpen(false)
-  }
-
-  function navigateToProjects() {
-    navigate('/projects')
+    element?.scrollIntoView({ behavior: 'smooth' })
     setIsMobileMenuOpen(false)
   }
 
@@ -64,15 +55,15 @@ export function DefaultLayout() {
             </Title>
             <Separator />
             <DialogNavigation>
-              <a onClick={navigateToAbout}>
+              <a onClick={() => smoothScrollToId('home')}>
                 <UserCircle size={36} />
                 {t('about')}
               </a>
-              <a onClick={navigateToExperience}>
+              <a onClick={() => smoothScrollToId('experience')}>
                 <GraduationCap size={36} />
                 {t('experience')}
               </a>
-              <a onClick={navigateToProjects}>
+              <a onClick={() => smoothScrollToId('projects')}>
                 <Code size={36} />
                 {t('projects')}
               </a>
