@@ -26,22 +26,40 @@ import {
 } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 import { LanguageSelect } from '../language-select'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 
 export function Header() {
   const { t } = useTranslation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
 
   function smoothScrollToId(id: string) {
     const element = document.getElementById(id)
 
-    element?.scrollIntoView({ behavior: 'smooth' })
-    setIsMobileMenuOpen(false)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      })
+      setIsMobileMenuOpen(false)
+    }
   }
 
+  // Altura dinâmica para o header
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <HeaderContainer>
+    <HeaderContainer height={scrollY > 54 ? '56px' : '86px'}>
       <HeaderDesktop>
         <Navbar>
           <Avatar src={avatarImage} />

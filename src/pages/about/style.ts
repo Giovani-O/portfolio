@@ -62,7 +62,7 @@ export const Tools = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   /* top: -${(props) => props.theme.layoutProperties['top-140']}; */
 
   h2 {

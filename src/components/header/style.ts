@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
 
-export const HeaderContainer = styled.header`
+interface HeaderProps {
+  height: string
+}
+
+export const HeaderContainer = styled.header<HeaderProps>`
   position: fixed;
   z-index: 100;
 
@@ -10,7 +14,8 @@ export const HeaderContainer = styled.header`
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(16px);
   width: 100%;
-  height: 56px;
+  height: ${(props) => props.height};
+  transition: height 0.6s ease;
 `
 
 export const HeaderDesktop = styled.div`
@@ -102,6 +107,7 @@ export const Overlay = styled(Dialog.Overlay)`
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 101;
 `
 
 export const Content = styled(Dialog.Content)`
@@ -114,6 +120,7 @@ export const Content = styled(Dialog.Content)`
   backdrop-filter: blur(16px);
   transform: translateX(-100%);
   animation: menuSlide 0.3s forwards;
+  z-index: 101;
 
   @keyframes menuSlide {
     to {
