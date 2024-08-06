@@ -2,10 +2,13 @@ import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
 
 export const HeaderContainer = styled.header`
+  position: fixed;
+  z-index: 100;
+
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(16px);
   width: 100%;
   height: 56px;
 `
