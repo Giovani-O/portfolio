@@ -1,4 +1,5 @@
 import { BasePanel } from '../../components/base-panel'
+import { Footer } from '../../components/footer'
 import { Separator } from '../../components/separator'
 import { About } from '../about'
 import { Experience } from '../experience'
@@ -16,6 +17,7 @@ export function Home() {
         <Separator />
         <Projects />
       </BasePanel>
+      <Footer />
     </main>
   )
 }

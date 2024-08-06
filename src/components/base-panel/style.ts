@@ -27,7 +27,7 @@ export const PanelContent = styled.div`
   border-radius: 16px;
   border: 1px solid ${(props) => props.theme.colours.stroke};
   margin-inline: 12px;
-  margin-block: 40px;
+  margin-block: 40px 0;
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4px);
