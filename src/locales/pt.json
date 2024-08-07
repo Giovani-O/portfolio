@@ -33,5 +33,7 @@
 
   "orange-tasks": "Orange Tasks",
   "orange-tasks-alt": "Imagem de um site de gestão de tarefas",
-  "orange-tasks-description": "Este é o front-end do Orange Branch Task Manager, desenvolvido com React, TypeScript, Tailwind e outras tecnologias. O objetivo era ter uma interface integrada com a API para facilitar o acesso as funcionalidades da mesma."
+  "orange-tasks-description": "Este é o front-end do Orange Branch Task Manager, desenvolvido com React, TypeScript, Tailwind e outras tecnologias. O objetivo era ter uma interface integrada com a API para facilitar o acesso as funcionalidades da mesma.",
+
+  "copyright": "© 2024 | Giovani de Oliveira | Todos os direitos reservados"
 }

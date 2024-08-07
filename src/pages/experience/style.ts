@@ -66,14 +66,14 @@ export const ContentLeft = styled.div`
   min-height: 120px;
   align-items: center;
 
-  animation: slide-left 0.8s ease-out forwards;
+  /* animation: slide-left 0.8s ease-out forwards; */
 
   @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
   }
 
-  @keyframes slide-left {
+  /* @keyframes slide-left {
     from {
       transform: translateX(25%);
       opacity: 0;
@@ -82,7 +82,7 @@ export const ContentLeft = styled.div`
       transform: translateX(0);
       opacity: 1;
     }
-  }
+  } */
 `
 
 export const ContentRight = styled.div`
@@ -92,14 +92,14 @@ export const ContentRight = styled.div`
   width: 100%;
   min-height: 120px;
   align-items: center;
-  animation: slide-right 0.8s ease-out forwards;
+  /* animation: slide-right 0.8s ease-out forwards; */
 
   @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
   }
 
-  @keyframes slide-right {
+  /* @keyframes slide-right {
     from {
       transform: translateX(-25%);
       opacity: 0;
@@ -108,5 +108,5 @@ export const ContentRight = styled.div`
       transform: translateX(0);
       opacity: 1;
     }
-  }
+  } */
 `

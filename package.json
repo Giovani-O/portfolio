@@ -22,8 +22,7 @@
     "react-dom": "^18.3.1",
     "react-i18next": "^15.0.0",
     "react-router-dom": "^6.25.1",
-    "styled-components": "^6.1.12",
-    "zustand": "^4.5.4"
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next'
 import { Social } from '../social'
 import { FooterContainer } from './style'
 
 export function Footer() {
+  const { t } = useTranslation()
+
   return (
     <FooterContainer>
       <Social />
-      <p>© 2024 | Giovani de Oliveira | Todos os direitos reservados</p>
+      <p>{t('copyright')}</p>
     </FooterContainer>
   )
 }
