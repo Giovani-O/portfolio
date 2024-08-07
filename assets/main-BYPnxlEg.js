@@ -692,10 +692,6 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
     font-family: 'Montserrat', sans-serif;
   }
 
-  html {
-    background-color: ${e=>e.theme.colours.secondary};
-  }
-
   body {
     
     background: url(${v5}) no-repeat fixed;
