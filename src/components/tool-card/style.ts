@@ -33,4 +33,10 @@ export const Card = styled.div`
     transform: perspective(1000px) translateZ(60px);
     background-color: rgba(30, 30, 30, 0.2);
   }
+
+  @media (max-width: 600px) {
+    background-color: ${(props) =>
+      props.theme.colours['card-background-mobile']};
+    backdrop-filter: none;
+  }
 `

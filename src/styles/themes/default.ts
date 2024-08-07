@@ -6,6 +6,9 @@ export const defaultTheme = {
     secondary: '#42298A',
     stroke: 'rgba(255, 255, 255, 0.1)',
     background: 'rgba(0, 0, 0, 0.2),',
+    'background-mobile': '#503797',
+    'card-background-mobile': '#3E2A75',
+    'menu-background-mobile': '#140D25',
   },
 
   fontSizes: {

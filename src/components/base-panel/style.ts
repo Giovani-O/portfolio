@@ -36,4 +36,9 @@ export const PanelContent = styled.div`
     padding-inline: 12px;
     width: 100%;
   }
+
+  @media (max-width: 600px) {
+    background-color: ${(props) => props.theme.colours['background-mobile']};
+    backdrop-filter: none;
+  }
 `

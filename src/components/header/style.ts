@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
-
 interface HeaderProps {
   height: string
 }
@@ -16,6 +15,12 @@ export const HeaderContainer = styled.header<HeaderProps>`
   width: 100%;
   height: ${(props) => props.height};
   transition: height 0.6s ease;
+
+  @media (max-width: 600px) {
+    background-color: ${(props) => props.theme.colours['background-mobile']};
+    backdrop-filter: none;
+    border-bottom: 1px solid ${(props) => props.theme.colours.stroke};
+  }
 `
 
 export const HeaderDesktop = styled.div`
@@ -126,6 +131,12 @@ export const Content = styled(Dialog.Content)`
     to {
       transform: translateX(0);
     }
+  }
+
+  @media (max-width: 600px) {
+    background-color: ${(props) =>
+      props.theme.colours['menu-background-mobile']};
+    backdrop-filter: none;
   }
 `
 
