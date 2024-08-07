@@ -14,7 +14,7 @@ import rocketseat from '../../assets/rocketseat.svg'
 import unasp from '../../assets/unasp.png'
 import { Separator } from '../../components/separator'
 
-export function Experience() {
+export default function Experience() {
   const { t } = useTranslation()
 
   return (
@@ -26,7 +26,7 @@ export function Experience() {
 
       <ContentContainer>
         <ContentLeft>
-          <ContentImage src={fcamara} alt={t('fcamara-alt')} />
+          <ContentImage src={fcamara} alt={t('fcamara-alt')} loading="lazy" />
           <div>
             <Paragraph>{t('fcamara-p1')}</Paragraph>
             <Paragraph>{t('fcamara-p2')}</Paragraph>
@@ -36,7 +36,11 @@ export function Experience() {
         <Separator />
 
         <ContentRight>
-          <ContentImage src={rocketseat} alt={t('rocketseat-alt')} />
+          <ContentImage
+            src={rocketseat}
+            alt={t('rocketseat-alt')}
+            loading="lazy"
+          />
           <div>
             <Paragraph>{t('rocketseat-p1')}</Paragraph>
             <Paragraph>{t('rocketseat-p2')}</Paragraph>
@@ -46,7 +50,7 @@ export function Experience() {
         <Separator />
 
         <ContentLeft>
-          <ContentImage src={unasp} alt={t('unasp-alt')} />
+          <ContentImage src={unasp} alt={t('unasp-alt')} loading="lazy" />
           <div>
             <Paragraph>{t('unasp-p1')}</Paragraph>
             <Paragraph>{t('unasp-p2')}</Paragraph>

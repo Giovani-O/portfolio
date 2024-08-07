@@ -1,3 +1,4 @@
+import React from 'react'
 import { Card } from './style'
 
 interface ToolCardProps {
@@ -5,11 +6,12 @@ interface ToolCardProps {
   title: string
 }
 
-export function ToolCard({ image, title }: ToolCardProps) {
+export const ToolCard = React.memo(function ({ image, title }: ToolCardProps) {
   return (
     <Card>
-      <img src={image} alt={title} />
+      <img src={image} alt={title} loading="lazy" />
+
       <h3>{title}</h3>
     </Card>
   )
-}
+})

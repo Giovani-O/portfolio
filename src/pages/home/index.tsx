@@ -1,21 +1,31 @@
 import { BasePanel } from '../../components/base-panel'
 import { Footer } from '../../components/footer'
 import { Separator } from '../../components/separator'
-import { About } from '../about'
-import { Experience } from '../experience'
-import { Projects } from '../projects'
 import { Spacer } from './style'
+import { lazy, Suspense } from 'react'
+
+const About = lazy(() => import('../about'))
+const Experience = lazy(() => import('../experience'))
+const Projects = lazy(() => import('../projects'))
 
 export function Home() {
   return (
     <main id="home">
       <Spacer />
       <BasePanel>
-        <About />
+        <Suspense fallback={<p>Loading...</p>}>
+          <About />
+        </Suspense>
         <Separator />
-        <Experience />
+
+        <Suspense fallback={<p>Loading...</p>}>
+          <Experience />
+        </Suspense>
         <Separator />
-        <Projects />
+
+        <Suspense fallback={<p>Loading...</p>}>
+          <Projects />
+        </Suspense>
       </BasePanel>
       <Footer />
     </main>

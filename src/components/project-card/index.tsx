@@ -34,7 +34,7 @@ export function ProjectCard({
 
       <a href={linkSite ? linkSite : linkGithub} target="_blank">
         <div>
-          <img src={image} alt={imageAlt} />
+          <img src={image} alt={imageAlt} loading="lazy" />
         </div>
       </a>
 
