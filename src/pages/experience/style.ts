@@ -46,7 +46,7 @@ export const Paragraph = styled.p`
   }
 
   @media (max-width: 900px) {
-    font-size: ${(props) => props.theme.fontSizes.sm};
+    font-size: ${(props) => props.theme.fontSizes.tag};
   }
 `
 
@@ -55,7 +55,7 @@ export const ContentImage = styled.img`
   object-fit: contain;
 
   @media (max-width: 900px) {
-    width: 100%;
+    width: 80%;
   }
 `
 

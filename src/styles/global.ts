@@ -9,7 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
   }
 
+  html {
+    background-color: ${(props) => props.theme.colours.secondary};
+  }
+
   body {
+    
     background: url(${background}) no-repeat fixed;
     background-position: center;
     background-size: cover;

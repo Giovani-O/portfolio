@@ -3,22 +3,17 @@ import styled from 'styled-components'
 export const CarouselContainer = styled.div`
   position: relative;
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
-
-  @media (max-width: 900px) {
-    max-width: 100%;
-  }
 `
 
 export const Button = styled.button`
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #ffffff;
   border: 1px solid ${(props) => props.theme.colours.stroke};
   border-radius: 4px;
-  padding: 8px;
+  padding: 4px;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -31,11 +26,7 @@ export const Button = styled.button`
   }
 
   @media (max-width: 900px) {
-    padding: 8px 16px;
-  }
-
-  @media (max-width: 600px) {
-    padding: 6px 12px;
+    padding: 8px;
   }
 `
 
@@ -62,13 +53,5 @@ export const CarouselTrack = styled.ul`
 export const CarouselItem = styled.li`
   min-width: 100%;
   box-sizing: border-box;
-  padding: 16px;
-
-  @media (max-width: 900px) {
-    padding: 14px;
-  }
-
-  @media (max-width: 600px) {
-    padding: 12px;
-  }
+  padding: 12px;
 `

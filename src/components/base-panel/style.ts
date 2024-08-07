@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PanelSection = styled.section`
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   animation: slide-up 0.8s ease-out forwards;
@@ -34,5 +34,6 @@ export const PanelContent = styled.div`
 
   @media (max-width: 900px) {
     padding-inline: 12px;
+    width: 100%;
   }
 `

@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
 
   p {
-    margin-bottom: 12px;
+    margin-top: 12px;
     text-align: center;
   }
 `

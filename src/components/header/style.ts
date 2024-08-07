@@ -24,7 +24,7 @@ export const HeaderDesktop = styled.div`
   align-items: center;
   width: 1200px;
   height: 100%;
-  margin-inline: 20px;
+  margin-inline: 12px;
 
   @media (max-width: 900px) {
     display: none;
@@ -115,7 +115,7 @@ export const Content = styled(Dialog.Content)`
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(16px);
   transform: translateX(-100%);

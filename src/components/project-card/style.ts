@@ -30,17 +30,15 @@ export const Title = styled.h3`
 `
 
 export const Tags = styled.div`
-  font-size: ${(props) => props.theme.fontSizes.tag};
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 4px 8px;
-  margin-inline: 12px;
   margin-block: 20px;
 `
 
 export const Tag = styled.span`
+  font-size: ${(props) => props.theme.fontSizes.tag};
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid ${(props) => props.theme.colours.stroke};
   color: ${(props) => props.theme.colours.white};
@@ -63,8 +61,17 @@ export const Description = styled.p`
   font-weight: ${(props) => props.theme.fontWeights.regular};
   text-align: justify;
   margin-block: 20px;
+
+  @media (max-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.tag};
+  }
 `
 
 export const LinkLabel = styled.p`
+  font-size: ${(props) => props.theme.fontSizes.xs};
   margin-bottom: 12px;
+
+  @media (max-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.tag};
+  }
 `

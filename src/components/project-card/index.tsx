@@ -37,9 +37,11 @@ export function ProjectCard({
           <img src={image} alt={imageAlt} />
         </div>
       </a>
+
       <Description
         dangerouslySetInnerHTML={{ __html: description }}
       ></Description>
+
       {linkSite ? (
         <LinkLabel>
           {t('link-site')}{' '}

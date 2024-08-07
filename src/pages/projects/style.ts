@@ -19,6 +19,10 @@ export const Subtitle = styled.p`
   font-size: ${(props) => props.theme.fontSizes.xs};
   font-weight: ${(props) => props.theme.fontWeights.regular};
   text-align: center;
+
+  @media (max-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.tag};
+  }
 `
 
 export const ProjectsContainer = styled.div`

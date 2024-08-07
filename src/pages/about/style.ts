@@ -37,7 +37,7 @@ export const BioInfo = styled.div`
 
   @media (max-width: 900px) {
     p {
-      font-size: ${(props) => props.theme.fontSizes.sm};
+      font-size: ${(props) => props.theme.fontSizes.tag};
     }
   }
 `
