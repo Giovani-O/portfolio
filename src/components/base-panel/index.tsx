@@ -1,7 +1,7 @@
-import { PanelContent, PanelSection } from './style'
+import { PanelContent, PanelSection } from "./style";
 
 interface BasePanelProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export function BasePanel({ children }: BasePanelProps) {
@@ -9,5 +9,5 @@ export function BasePanel({ children }: BasePanelProps) {
     <PanelSection>
       <PanelContent>{children}</PanelContent>
     </PanelSection>
-  )
+  );
 }
