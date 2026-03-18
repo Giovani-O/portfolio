@@ -1,4 +1,4 @@
-import{d as i,u as r,j as e,b as a}from"./main-Mw6RRx6m.js";const l=i.div`
+import{d as i,u as r,j as e,b as a}from"./main-DLxPrm4Q.js";const l=i.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,4 +92,4 @@ import{d as i,u as r,j as e,b as a}from"./main-Mw6RRx6m.js";const l=i.div`
       opacity: 1;
     }
   } */
-`,f="/portfolio/assets/fcamara-OkfkNQOr.png",h="/portfolio/assets/rocketseat-BGswpuFZ.svg",m="/portfolio/assets/unasp-DUVInGoP.png";function j(){const{t}=r();return e.jsxs("div",{id:"experience",children:[e.jsxs(l,{children:[e.jsx(c,{children:t("experience")}),e.jsx(d,{children:t("experience-subtitle")})]}),e.jsxs(x,{children:[e.jsxs(o,{children:[e.jsx(n,{src:f,alt:t("fcamara-alt"),loading:"lazy"}),e.jsxs("div",{children:[e.jsx(s,{children:t("fcamara-p1")}),e.jsx(s,{children:t("fcamara-p2")})]})]}),e.jsx(a,{}),e.jsxs(p,{children:[e.jsx(n,{src:h,alt:t("rocketseat-alt"),loading:"lazy"}),e.jsxs("div",{children:[e.jsx(s,{children:t("rocketseat-p1")}),e.jsx(s,{children:t("rocketseat-p2")})]})]}),e.jsx(a,{}),e.jsxs(o,{children:[e.jsx(n,{src:m,alt:t("unasp-alt"),loading:"lazy"}),e.jsxs("div",{children:[e.jsx(s,{children:t("unasp-p1")}),e.jsx(s,{children:t("unasp-p2")})]})]})]})]})}export{j as default};
+`,f="/portfolio/assets/fcamara-OkfkNQOr.png",h="/portfolio/assets/rocketseat-BGswpuFZ.svg",m="/portfolio/assets/unasp-DUVInGoP.png";function j(){const{t}=r();return e.jsxs("div",{id:"experience",children:[e.jsxs(l,{children:[e.jsx(c,{children:t("experience")}),e.jsx(d,{children:t("experience-subtitle")})]}),e.jsxs(x,{children:[e.jsxs(o,{children:[e.jsx(n,{src:f,alt:t("fcamara-alt"),loading:"lazy"}),e.jsxs("div",{children:[e.jsx(s,{children:t("fcamara-p1")}),e.jsx(s,{children:t("fcamara-p2")}),e.jsx(s,{children:t("fcamara-p3")})]})]}),e.jsx(a,{}),e.jsxs(p,{children:[e.jsx(n,{src:h,alt:t("rocketseat-alt"),loading:"lazy"}),e.jsxs("div",{children:[e.jsx(s,{children:t("rocketseat-p1")}),e.jsx(s,{children:t("rocketseat-p2")})]})]}),e.jsx(a,{}),e.jsxs(o,{children:[e.jsx(n,{src:m,alt:t("unasp-alt"),loading:"lazy"}),e.jsxs("div",{children:[e.jsx(s,{children:t("unasp-p1")}),e.jsx(s,{children:t("unasp-p2")})]})]})]})]})}export{j as default};
