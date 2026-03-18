@@ -10,6 +10,7 @@ import {
   LanguageMenu,
   Navbar,
   NavbarLink,
+  NavLinks,
   Overlay,
   Separator,
   Title,
@@ -64,6 +65,9 @@ export function Header() {
         <Navbar>
           <Avatar src={avatarImage} />
           <Title>Giovani de Oliveira</Title>
+        </Navbar>
+
+        <NavLinks>
           <NavbarLink onClick={() => smoothScrollToId("home")}>
             {t("about")}
           </NavbarLink>
@@ -73,7 +77,7 @@ export function Header() {
           <NavbarLink onClick={() => smoothScrollToId("projects")}>
             {t("projects")}
           </NavbarLink>
-        </Navbar>
+        </NavLinks>
 
         <LanguageMenu>
           <LanguageSelect />

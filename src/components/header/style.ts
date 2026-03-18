@@ -25,6 +25,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
 `;
 
 export const HeaderDesktop = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +60,15 @@ export const Title = styled.h3`
   @media (max-width: 900px) {
     font-size: ${(props) => props.theme.fontSizes.lg};
   }
+`;
+
+export const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 export const NavbarLink = styled.a`

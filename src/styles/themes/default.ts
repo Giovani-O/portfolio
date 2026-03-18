@@ -1,6 +1,7 @@
 export const defaultTheme = {
   colours: {
     white: "#fff",
+    offwhite: "#a1a1aa",
 
     primary: "#7D58EA",
     secondary: "#42298A",
