@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 import {
   TitleContainer,
   Title,
@@ -8,28 +8,29 @@ import {
   ContentRight,
   ContentContainer,
   ContentImage,
-} from './style'
-import fcamara from '../../assets/fcamara.png'
-import rocketseat from '../../assets/rocketseat.svg'
-import unasp from '../../assets/unasp.png'
-import { Separator } from '../../components/separator'
+} from "./style";
+import fcamara from "../../assets/fcamara.png";
+import rocketseat from "../../assets/rocketseat.svg";
+import unasp from "../../assets/unasp.png";
+import { Separator } from "../../components/separator";
 
 export default function Experience() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <div id="experience">
       <TitleContainer>
-        <Title>{t('experience')}</Title>
-        <Subtitle>{t('experience-subtitle')}</Subtitle>
+        <Title>{t("experience")}</Title>
+        <Subtitle>{t("experience-subtitle")}</Subtitle>
       </TitleContainer>
 
       <ContentContainer>
         <ContentLeft>
-          <ContentImage src={fcamara} alt={t('fcamara-alt')} loading="lazy" />
+          <ContentImage src={fcamara} alt={t("fcamara-alt")} loading="lazy" />
           <div>
-            <Paragraph>{t('fcamara-p1')}</Paragraph>
-            <Paragraph>{t('fcamara-p2')}</Paragraph>
+            <Paragraph>{t("fcamara-p1")}</Paragraph>
+            <Paragraph>{t("fcamara-p2")}</Paragraph>
+            <Paragraph>{t("fcamara-p3")}</Paragraph>
           </div>
         </ContentLeft>
 
@@ -38,25 +39,25 @@ export default function Experience() {
         <ContentRight>
           <ContentImage
             src={rocketseat}
-            alt={t('rocketseat-alt')}
+            alt={t("rocketseat-alt")}
             loading="lazy"
           />
           <div>
-            <Paragraph>{t('rocketseat-p1')}</Paragraph>
-            <Paragraph>{t('rocketseat-p2')}</Paragraph>
+            <Paragraph>{t("rocketseat-p1")}</Paragraph>
+            <Paragraph>{t("rocketseat-p2")}</Paragraph>
           </div>
         </ContentRight>
 
         <Separator />
 
         <ContentLeft>
-          <ContentImage src={unasp} alt={t('unasp-alt')} loading="lazy" />
+          <ContentImage src={unasp} alt={t("unasp-alt")} loading="lazy" />
           <div>
-            <Paragraph>{t('unasp-p1')}</Paragraph>
-            <Paragraph>{t('unasp-p2')}</Paragraph>
+            <Paragraph>{t("unasp-p1")}</Paragraph>
+            <Paragraph>{t("unasp-p2")}</Paragraph>
           </div>
         </ContentLeft>
       </ContentContainer>
     </div>
-  )
+  );
 }
