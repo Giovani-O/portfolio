@@ -48,7 +48,6 @@ export const Tools = styled.section`
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
-  /* top: -${(props) => props.theme.layoutProperties['top-140']}; */
 
   h2 {
     margin-block: 40px;
@@ -58,19 +57,19 @@ export const Tools = styled.section`
 
 export const ToolCardGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  justify-content: center;
   gap: 12px;
   width: 100%;
-
-  @media (max-width: 1100px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  padding-inline: 32px;
 
   @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+    padding-inline: 16px;
   }
 `

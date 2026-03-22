@@ -2,41 +2,37 @@ import styled from 'styled-components'
 
 export const Card = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 8px;
 
-  width: 100%;
-  height: 100px;
-  border-radius: 16px;
-  border: 1px solid ${(props) => props.theme.colours.stroke};
-  padding-block: 12px;
-  padding-inline: 40px;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
-
-  transform: perspective(1000px) translateZ(0);
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  height: 44px;
+  min-width: 120px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
   cursor: pointer;
 
   img {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
   }
 
   h3 {
-    font-size: ${(props) => props.theme.fontSizes.sm};
-    font-weight: ${(props) => props.theme.fontWeights.medium};
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: ${(props) => props.theme.colours.offwhite};
   }
 
   &:hover {
-    transform: perspective(1000px) translateZ(60px);
-    background-color: rgba(30, 30, 30, 0.2);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(125, 88, 234, 0.3);
   }
 
   @media (max-width: 600px) {
     background-color: ${(props) =>
       props.theme.colours['card-background-mobile']};
-    backdrop-filter: none;
   }
 `
