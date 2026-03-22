@@ -1,9 +1,13 @@
-import styled from 'styled-components'
-import * as Dialog from '@radix-ui/react-dialog'
-import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET, MAX_CONTENT_WIDTH } from '../../constants'
+import styled from "styled-components";
+import * as Dialog from "@radix-ui/react-dialog";
+import {
+  BREAKPOINT_MOBILE,
+  BREAKPOINT_TABLET,
+  MAX_CONTENT_WIDTH,
+} from "../../constants";
 
 interface HeaderProps {
-  height: string
+  height: string;
 }
 
 export const HeaderContainer = styled.header<HeaderProps>`
@@ -20,11 +24,11 @@ export const HeaderContainer = styled.header<HeaderProps>`
   border-bottom: 1px solid ${(props) => props.theme.colours.stroke};
 
   @media (max-width: ${BREAKPOINT_MOBILE}px) {
-    background-color: ${(props) => props.theme.colours['background-mobile']};
+    background-color: ${(props) => props.theme.colours["background-mobile"]};
     backdrop-filter: none;
     border-bottom: 1px solid ${(props) => props.theme.colours.stroke};
   }
-`
+`;
 
 export const HeaderDesktop = styled.div`
   position: relative;
@@ -38,21 +42,21 @@ export const HeaderDesktop = styled.div`
   @media (max-width: ${BREAKPOINT_TABLET}px) {
     display: none;
   }
-`
+`;
 
 export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1.25rem;
-`
+`;
 
 export const Avatar = styled.img`
   max-width: 36px;
   max-height: 100%;
   border: 1px solid ${(props) => props.theme.colours.stroke};
   border-radius: 100%;
-`
+`;
 
 export const Title = styled.h3`
   font-weight: ${(props) => props.theme.fontWeights.medium};
@@ -62,7 +66,7 @@ export const Title = styled.h3`
   @media (max-width: ${BREAKPOINT_TABLET}px) {
     font-size: ${(props) => props.theme.fontSizes.lg};
   }
-`
+`;
 
 export const NavLinks = styled.div`
   display: flex;
@@ -71,19 +75,19 @@ export const NavLinks = styled.div`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-`
+`;
 
 export const NavbarLink = styled.a`
   cursor: pointer;
   border-bottom: 2px solid transparent;
   text-decoration: none;
   font-weight: ${(props) => props.theme.fontWeights.regular};
-  transition: border-bottom-color 0.4s ease-in-out;
+  transition: border-bottom-color 0.15s ease;
 
   &:hover {
-    border-bottom-color: ${(props) => props.theme.colours.white};
+    border-bottom-color: rgba(125, 88, 234, 0.3);
   }
-`
+`;
 
 export const LanguageMenu = styled.div`
   display: flex;
@@ -91,7 +95,7 @@ export const LanguageMenu = styled.div`
   justify-content: center;
   gap: 0.75rem;
   border-bottom: 2px solid transparent;
-`
+`;
 
 export const HeaderMobile = styled.div`
   display: flex;
@@ -102,7 +106,7 @@ export const HeaderMobile = styled.div`
   @media (min-width: ${BREAKPOINT_TABLET}px) {
     display: none;
   }
-`
+`;
 
 export const HamburgerButton = styled.button`
   background-color: transparent;
@@ -117,14 +121,14 @@ export const HamburgerButton = styled.button`
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
-`
+`;
 
 export const Overlay = styled(Dialog.Overlay)`
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 101;
-`
+`;
 
 export const Content = styled(Dialog.Content)`
   position: fixed;
@@ -146,10 +150,10 @@ export const Content = styled(Dialog.Content)`
 
   @media (max-width: ${BREAKPOINT_MOBILE}px) {
     background-color: ${(props) =>
-      props.theme.colours['menu-background-mobile']};
+      props.theme.colours["menu-background-mobile"]};
     backdrop-filter: none;
   }
-`
+`;
 
 export const TitleMobile = styled(Dialog.Title)`
   display: flex;
@@ -159,7 +163,7 @@ export const TitleMobile = styled(Dialog.Title)`
   font-weight: ${(props) => props.theme.fontWeights.bold};
   padding-inline: 12px;
   padding-block: 24px;
-`
+`;
 
 export const CloseButton = styled.button`
   position: absolute;
@@ -168,7 +172,7 @@ export const CloseButton = styled.button`
   border: none;
   cursor: pointer;
   margin-right: 12px;
-`
+`;
 
 export const Separator = styled.hr`
   border: none;
@@ -181,7 +185,7 @@ export const Separator = styled.hr`
     ${(props) => props.theme.colours.stroke},
     transparent
   );
-`
+`;
 
 export const DialogNavigation = styled(Dialog.Description)`
   display: flex;
@@ -213,4 +217,4 @@ export const DialogNavigation = styled(Dialog.Description)`
     font-size: ${(props) => props.theme.fontSizes.md};
     margin-top: auto;
   }
-`
+`;

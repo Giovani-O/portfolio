@@ -116,24 +116,18 @@ export function Header() {
             </TitleMobile>
             <Separator />
             <DialogNavigation>
-              <button type="button" onClick={() => smoothScrollToId("home")}>
+              <a onClick={() => smoothScrollToId("home")}>
                 <UserCircle size={36} />
                 {t("about")}
-              </button>
-              <button
-                type="button"
-                onClick={() => smoothScrollToId("experience")}
-              >
+              </a>
+              <a onClick={() => smoothScrollToId("experience")}>
                 <GraduationCap size={36} />
                 {t("experience")}
-              </button>
-              <button
-                type="button"
-                onClick={() => smoothScrollToId("projects")}
-              >
+              </a>
+              <a onClick={() => smoothScrollToId("projects")}>
                 <Code size={36} />
                 {t("projects")}
-              </button>
+              </a>
               <span>
                 <Translate size={36} />
                 {t("language")}

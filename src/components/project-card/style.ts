@@ -48,12 +48,13 @@ export const Tag = styled.span`
   border-radius: 16px;
 
   transform: perspective(1000px) translateZ(0);
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.15s ease;
   cursor: pointer;
 
   &:hover {
     transform: perspective(1000px) translateZ(60px);
     background-color: rgba(30, 30, 30, 0.1);
+    border-color: rgba(125, 88, 234, 0.3);
   }
 `
 
