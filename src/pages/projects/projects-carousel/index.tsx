@@ -9,9 +9,7 @@ import {
 } from './style'
 import { useEffect, useRef, useState } from 'react'
 import { ProjectCard } from '../../../components/project-card'
-import coffeeDelivery from '../../../assets/projects/coffee.png'
-import taskManager from '../../../assets/projects/task-manager.png'
-import orangeTasks from '../../../assets/projects/orange-tasks.png'
+import { projects } from '../../../data/projects'
 import { useTranslation } from 'react-i18next'
 
 export function ProjectsCarousel() {
@@ -52,59 +50,19 @@ export function ProjectsCarousel() {
       </Previous>
       <CarouselTrackContainer>
         <CarouselTrack ref={trackRef}>
-          <CarouselItem>
-            <ProjectCard
-              title={t('coffee-delivery')}
-              tags={[
-                'React',
-                'TypeScript',
-                'Styled Components',
-                'Hooks',
-                'Context API',
-              ]}
-              image={coffeeDelivery}
-              imageAlt={t('coffee-delivery-alt')}
-              description={t('coffee-delivery-description')}
-              linkSite="https://ignite-coffee-delivery-hu2qn3fv7-giovani-o.vercel.app/"
-              linkGithub="https://github.com/Giovani-O/ignite-coffee-delivery/tree/main"
-            />
-          </CarouselItem>
-
-          <CarouselItem>
-            <ProjectCard
-              title={t('orange-branch-task-manager')}
-              tags={[
-                '.NET 8',
-                'C#',
-                'Entity Framework',
-                'RabbitMQ',
-                'xUnit',
-                'MySQL',
-              ]}
-              image={taskManager}
-              imageAlt={t('orange-branch-task-manager-alt')}
-              description={t('orange-branch-task-manager-description')}
-              linkGithub="https://github.com/Giovani-O/OrangeBranchTaskManager"
-            />
-          </CarouselItem>
-
-          <CarouselItem>
-            <ProjectCard
-              title={t('orange-tasks')}
-              tags={[
-                'React',
-                'TypeScript',
-                'Tailwind',
-                'Hooks',
-                'Zustand',
-                'Axios',
-              ]}
-              image={orangeTasks}
-              imageAlt={t('orange-tasks-alt')}
-              description={t('orange-tasks-description')}
-              linkGithub="https://github.com/Giovani-O/orange-branch-task-manager-react"
-            />
-          </CarouselItem>
+          {projects.map((project) => (
+            <CarouselItem key={project.titleKey}>
+              <ProjectCard
+                title={t(project.titleKey)}
+                tags={project.tags}
+                image={project.image}
+                imageAlt={t(project.imageAltKey)}
+                description={t(project.descriptionKey)}
+                linkSite={project.linkSite}
+                linkGithub={project.linkGithub}
+              />
+            </CarouselItem>
+          ))}
         </CarouselTrack>
       </CarouselTrackContainer>
       <Next onClick={handleNext} disabled={currentIndex === totalItems - 1}>

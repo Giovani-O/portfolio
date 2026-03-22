@@ -5,7 +5,7 @@ import { ToolCard } from "../../components/tool-card";
 import { tools } from "./tool-list.ts";
 import { Social } from "../../components/social/index.tsx";
 
-export default function About() {
+export function About() {
   const { t } = useTranslation();
 
   return (

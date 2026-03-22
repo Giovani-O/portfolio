@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { BREAKPOINT_TABLET } from '../../constants'
 
 export const TitleContainer = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ export const Subtitle = styled.p`
   font-weight: ${(props) => props.theme.fontWeights.regular};
   text-align: center;
 
-  @media (max-width: 900px) {
+  @media (max-width: ${BREAKPOINT_TABLET}px) {
     font-size: ${(props) => props.theme.fontSizes.tag};
   }
 `

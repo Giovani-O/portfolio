@@ -3,7 +3,7 @@ import { Subtitle, Title, TitleContainer } from './style'
 
 import { ProjectsCarousel } from './projects-carousel'
 
-export default function Projects() {
+export function Projects() {
   const { t } = useTranslation()
 
   return (

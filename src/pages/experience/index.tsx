@@ -14,7 +14,7 @@ import rocketseat from "../../assets/rocketseat.svg";
 import unasp from "../../assets/unasp.png";
 import { Separator } from "../../components/separator";
 
-export default function Experience() {
+export function Experience() {
   const { t } = useTranslation();
 
   return (

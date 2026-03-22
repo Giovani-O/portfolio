@@ -4,9 +4,13 @@ import { Separator } from '../../components/separator'
 import { Spacer } from './style'
 import { lazy, Suspense } from 'react'
 
-const About = lazy(() => import('../about'))
-const Experience = lazy(() => import('../experience'))
-const Projects = lazy(() => import('../projects'))
+const About = lazy(() => import('../about').then((m) => ({ default: m.About })))
+const Experience = lazy(() =>
+  import('../experience').then((m) => ({ default: m.Experience }))
+)
+const Projects = lazy(() =>
+  import('../projects').then((m) => ({ default: m.Projects }))
+)
 
 export function Home() {
   return (

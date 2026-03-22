@@ -16,7 +16,7 @@ import {
   Title,
   TitleMobile,
 } from "./style";
-import avatarImage from "./../../assets/user.png";
+import avatarImage from "../../assets/user.png";
 import {
   Code,
   GraduationCap,
@@ -29,6 +29,11 @@ import { useTranslation } from "react-i18next";
 import { LanguageSelect } from "../language-select";
 import { useEffect, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
+import {
+  HEADER_HEIGHT_COLLAPSED,
+  HEADER_HEIGHT_EXPANDED,
+  HEADER_SCROLL_THRESHOLD,
+} from "../../constants";
 
 export function Header() {
   const { t } = useTranslation();
@@ -46,7 +51,6 @@ export function Header() {
     }
   }
 
-  // Altura dinâmica para o header
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -60,7 +64,13 @@ export function Header() {
   }, []);
 
   return (
-    <HeaderContainer height={scrollY > 54 ? "56px" : "86px"}>
+    <HeaderContainer
+      height={
+        scrollY > HEADER_SCROLL_THRESHOLD
+          ? HEADER_HEIGHT_COLLAPSED
+          : HEADER_HEIGHT_EXPANDED
+      }
+    >
       <HeaderDesktop>
         <Navbar>
           <Avatar src={avatarImage} />
@@ -106,18 +116,24 @@ export function Header() {
             </TitleMobile>
             <Separator />
             <DialogNavigation>
-              <a onClick={() => smoothScrollToId("home")}>
+              <button type="button" onClick={() => smoothScrollToId("home")}>
                 <UserCircle size={36} />
                 {t("about")}
-              </a>
-              <a onClick={() => smoothScrollToId("experience")}>
+              </button>
+              <button
+                type="button"
+                onClick={() => smoothScrollToId("experience")}
+              >
                 <GraduationCap size={36} />
                 {t("experience")}
-              </a>
-              <a onClick={() => smoothScrollToId("projects")}>
+              </button>
+              <button
+                type="button"
+                onClick={() => smoothScrollToId("projects")}
+              >
                 <Code size={36} />
                 {t("projects")}
-              </a>
+              </button>
               <span>
                 <Translate size={36} />
                 {t("language")}

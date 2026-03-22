@@ -1,31 +1,23 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import { resources } from './@types/i18next'
 
-import en from './locales/en.json'
-import pt from './locales/pt.json'
+export const SUPPORTED_LANGUAGES = ['en', 'pt'] as const
+export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number]
 
-export const getLanguage = (lang: string) => {
-  const supportedLanguages = ['en', 'pt']
+export function getLanguage(lang: string): SupportedLanguage {
   const localStorageLanguage = localStorage.getItem('portfolio-language')
-
   const prioritaryLanguage = localStorageLanguage || lang
 
-  return supportedLanguages.includes(prioritaryLanguage)
+  return (SUPPORTED_LANGUAGES.includes(prioritaryLanguage as SupportedLanguage)
     ? prioritaryLanguage
-    : supportedLanguages[0]
+    : SUPPORTED_LANGUAGES[0]) as SupportedLanguage
 }
 
 const browserLanguage = navigator.language.substring(0, 2)
 
 i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: en,
-    },
-    pt: {
-      translation: pt,
-    },
-  },
+  resources,
   lng: getLanguage(browserLanguage),
   fallbackLng: 'en',
 
