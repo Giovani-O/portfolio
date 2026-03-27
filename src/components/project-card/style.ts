@@ -63,6 +63,7 @@ export const Description = styled.p`
   font-weight: ${(props) => props.theme.fontWeights.regular};
   text-align: justify;
   margin-block: 20px;
+  white-space: pre-line;
 
   @media (max-width: 900px) {
     font-size: ${(props) => props.theme.fontSizes.tag};

@@ -24,6 +24,10 @@
   "link-site": "🖥️ Access the application:",
   "link-github": "👨‍💻 Take a look at the source code:",
 
+  "webhook-inspector": "Webhook Inspector",
+  "webhook-inspector-alt": "Image of the project and a console displaying tests",
+  "webhook-inspector-description": "A complete fullstack solution for capturing and inspecting webhooks, designed to accelerate the development workflow. The standout feature is the integration with Google Gemini API (via Vercel AI SDK), which analyzes the received payload and automatically generates Zod validation schemas and TypeScript handlers. \n\nBeyond the modern stack (Fastify, Drizzle, TanStack), I focused on ecosystem reliability by implementing a rigorous suite of unit and integration tests with Vitest, ensuring stability and ease of maintenance.",
+
   "coffee-delivery": "Coffee Delivery",
   "coffee-delivery-alt": "Image of a coffee delivery website",
   "coffee-delivery-description": "A SPA (Single Page Application) developed as a challenge in Rocketseat's React course. During development, features, libraries and tools available in the React ecosystem were used, such as Styled Components, Hooks, Contexts and Reducers. The application also has a responsive layout, adapting to different screen sizes.",

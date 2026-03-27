@@ -24,6 +24,10 @@
   "link-site": "🖥️ Acesse a aplicação:",
   "link-github": "👨‍💻 Dê uma olhada no código fonte:",
 
+  "webhook-inspector": "Webhook Inspector + IA",
+  "webhook-inspector-alt": "Imagem do projeto e um console exibindo testes",
+  "webhook-inspector-description": "Uma solução fullstack completa para captura e inspeção de webhooks, projetada para acelerar o fluxo de desenvolvimento. O diferencial está na integração com a Google Gemini API (via Vercel AI SDK), que analisa o payload recebido e gera automaticamente esquemas de validação Zod e handlers TypeScript. \n\nAlém da stack moderna (Fastify, Drizzle, TanStack), foquei na confiabilidade do ecossistema, implementando uma suíte rigorosa de testes unitários e de integração com Vitest, garantindo estabilidade e facilidade de manutenção.",
+
   "coffee-delivery": "Coffee Delivery",
   "coffee-delivery-alt": "Imagem de um site de delivery de café",
   "coffee-delivery-description": "Uma SPA (Single Page Application) desenvolvida como um desafio da trilha de React da Rocketseat. Durante o desenvolvimento foram utilizadas funcionalidades, bibliotecas e ferramentas disponíveis no ecossistema React, como Styled Components, Hooks, Contextos e Reducers. A aplicação também conta com um layout responsivo, se adaptando a diversos tamanhos de telas.",
