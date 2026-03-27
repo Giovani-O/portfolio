@@ -17,7 +17,7 @@ export const projects: Project[] = [
 			"Tanstack Query",
 			"Vitest",
 			"Testes",
-			"IA",
+			"AI",
 			"Vercel AI SDK",
 		],
 		image: webhookInspector,
