@@ -26,7 +26,7 @@
 
   "clerk-webhook": "Clerk Webhook",
   "clerk-webhook-alt": "Gif do projeto Clerk Webhook, exibindo um evento sendo disparado.",
-  "clerk-webhook-description": "Um pequeno projeto desenvolvido com React e Node.js para experimentar com webhooks, para isso foi utilizado o Clerk, um serviço de autenticação e gerenciamento de usuários e foi feita a integração com os seus componentes de login e perfil. \n\nEu fiz webhook com Node.js, após o registrar no Clerk, ele recebe o evento com todos os seus dados e é validado com Svix, após isso, o evento é salvo em um banco dedados SQLite e exibido na interface. \n\nAlém disso, eu também utilizei IA para fazer o brainstorming desse projeto, gerar PRD e SDD e implementar o frontend.",
+  "clerk-webhook-description": "Um pequeno projeto desenvolvido com React e Node.js para experimentar com webhooks, para isso foi utilizado o Clerk, um serviço de autenticação e gerenciamento de usuários e foi feita a integração com os seus componentes de login e perfil. \n\nEu fiz webhook com Node.js, após o registrar no Clerk, ele recebe o evento com todos os seus dados e é validado com Svix, após isso, o evento é salvo em um banco de dados SQLite e exibido na interface. \n\nAlém disso, eu também utilizei IA para fazer o brainstorming desse projeto, gerar PRD e SDD e implementar o frontend.",
 
   "webhook-inspector": "Webhook Inspector + IA",
   "webhook-inspector-alt": "Imagem do projeto e um console exibindo testes",
