@@ -3,8 +3,28 @@ import webhookInspector from "../assets/projects/webhook-inspector.png";
 import coffeeDelivery from "../assets/projects/coffee.png";
 import taskManager from "../assets/projects/task-manager.png";
 import orangeTasks from "../assets/projects/orange-tasks.png";
+import clerkWebhook from "../assets/projects/clerk-webhook.gif";
 
 export const projects: Project[] = [
+	{
+		titleKey: "clerk-webhook",
+		tags: [
+			"Webhooks",
+			"Clerk",
+			"svix",
+			"Fastify",
+			"SQLite",
+			"React",
+			"Vite",
+			"Tanstack Router",
+			"Tanstack Query",
+			"AI",
+		],
+		image: clerkWebhook,
+		imageAltKey: "clerk-webhook-alt",
+		descriptionKey: "clerk-webhook-description",
+		linkGithub: "https://github.com/Giovani-O/clerk-webhook",
+	},
 	{
 		titleKey: "webhook-inspect",
 		tags: [

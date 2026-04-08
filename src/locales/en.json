@@ -24,6 +24,10 @@
   "link-site": "🖥️ Access the application:",
   "link-github": "👨‍💻 Take a look at the source code:",
 
+  "clerk-webhook": "Clerk Webhook",
+  "clerk-webhook-alt": "Clerk Webhook project GIF, showing an event being triggered.",
+  "clerk-webhook-description": "A small project developed with React and Node.js to experiment with webhooks. For this, Clerk was used - an authentication and user management service - and integration was made with its login and profile components.\n\nI made a webhook with Node.js; after registering it with Clerk, it receives the event with all its data and is validated with Svix. After that, the event is saved in a SQLite database and displayed in the interface.\n\nAdditionally, I also used AI to brainstorm this project, generate PRD and SDD, and implement the frontend.",
+
   "webhook-inspector": "Webhook Inspector",
   "webhook-inspector-alt": "Image of the project and a console displaying tests",
   "webhook-inspector-description": "A complete fullstack solution for capturing and inspecting webhooks, designed to accelerate the development workflow. The standout feature is the integration with Google Gemini API (via Vercel AI SDK), which analyzes the received payload and automatically generates Zod validation schemas and TypeScript handlers. \n\nBeyond the modern stack (Fastify, Drizzle, TanStack), I focused on ecosystem reliability by implementing a rigorous suite of unit and integration tests with Vitest, ensuring stability and ease of maintenance.",
