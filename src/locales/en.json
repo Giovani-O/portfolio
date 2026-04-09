@@ -20,8 +20,14 @@
   "unasp-p1": "In August 2023 I graduated in Information Systems at UNASP on the Hortolândia campus, in the interior of São Paulo.",
   "unasp-p2": "During the four years of the course, I studied technical skills that gave me the necessary base to excel at software development, as well as business and soft skills that prepared me to understand and face the challenges of the IT industry.",
 
-  "projects-subtitle": "Take a look at some of my favorite projects",
-  "link-site": "🖥️ Access the application:",
+	"projects-subtitle": "Take a look at some of my favorite projects",
+	"show-more": "Show more",
+	"show-less": "Show less",
+	"show-all-projects": "Show all projects",
+	"show-less-projects": "Show less",
+	"view-site": "View Site",
+	"view-code": "View Code",
+	"link-site": "🖥️ Access the application:",
   "link-github": "👨‍💻 Take a look at the source code:",
 
   "clerk-webhook": "Clerk Webhook",

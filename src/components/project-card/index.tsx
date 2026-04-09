@@ -1,63 +1,60 @@
 import { useTranslation } from 'react-i18next'
-import { Container, Description, LinkLabel, Tag, Tags, Title } from './style'
+import {
+  ButtonContainer,
+  CardContainer,
+  ContentContainer,
+  Description,
+  ImageContainer,
+  PrimaryButton,
+  SecondaryButton,
+  Tag,
+  Tags,
+  Title,
+} from './style'
+import { ExpandableDescription } from '../expandable-description'
+import type { Project } from '../../types/project'
 
 interface ProjectCardProps {
-  title: string
-  tags: string[]
-  image: string
-  imageAlt: string
-  description: string
-  linkSite?: string
-  linkGithub: string
+  project: Project
 }
 
-export function ProjectCard({
-  title,
-  tags,
-  image,
-  imageAlt,
-  description,
-  linkSite = '',
-  linkGithub,
-}: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
   const { t } = useTranslation()
 
   return (
-    <Container>
-      <Title>{title}</Title>
-
-      <Tags>
-        {tags.map((tag, index) => (
-          <Tag key={index}>{tag}</Tag>
-        ))}
-      </Tags>
-
-      <a href={linkSite ? linkSite : linkGithub} target="_blank">
-        <div>
-          <img src={image} alt={imageAlt} loading="lazy" />
-        </div>
-      </a>
-
-      <Description
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></Description>
-
-      {linkSite ? (
-        <LinkLabel>
-          {t('link-site')}{' '}
-          <a href={linkSite} target="_blank">
-            {title}
-          </a>
-        </LinkLabel>
-      ) : (
-        <></>
-      )}
-      <LinkLabel>
-        {t('link-github')}{' '}
-        <a href={linkGithub} target="_blank">
-          GitHub
-        </a>
-      </LinkLabel>
-    </Container>
+    <CardContainer>
+      <ImageContainer>
+        <img src={project.image} alt={t(project.imageAltKey)} loading="lazy" />
+      </ImageContainer>
+      <ContentContainer>
+        <Title>{t(project.titleKey)}</Title>
+        <Tags>
+          {project.tags.map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+        </Tags>
+        <Description>
+          <ExpandableDescription text={t(project.descriptionKey)} />
+        </Description>
+        <ButtonContainer>
+          {project.linkSite && (
+            <PrimaryButton
+              href={project.linkSite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('view-site')}
+            </PrimaryButton>
+          )}
+          <SecondaryButton
+            href={project.linkGithub}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t('view-code')}
+          </SecondaryButton>
+        </ButtonContainer>
+      </ContentContainer>
+    </CardContainer>
   )
 }
